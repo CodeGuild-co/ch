@@ -16,6 +16,12 @@
     .jumbotron .btn-primary:hover {
       background: #7646c1; }
   .jumbotron p {
+  	font-family: Gill Sans, Verdana;
+	font-size: 11px;
+	line-height: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
     color: #d9ccee;
     max-width: 75%;
     margin: 1em auto 2em; 
@@ -34,10 +40,5 @@
       max-width: 100%; }
       
 #subtitle {
-	  font-family: Gill Sans, Verdana;
-	font-size: 11px;
-	line-height: 14px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-weight: bold;
+	  
 	}

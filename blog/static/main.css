@@ -25,7 +25,7 @@
     .jumbotron .lang-logo img {
       max-width: 100%; }
       
-  h1 {font-family: times, Times New Roman, times-roman, georgia, serif;
+h1 {font-family: times, Times New Roman, times-roman, georgia, serif;
 	color: #444;
 	margin: 0;
 	padding: 0px 0px 6px 0px;
@@ -33,7 +33,7 @@
 	line-height: 44px;
 	letter-spacing: -2px;
 	font-weight: bold;}
-	#subtitle {
+#subtitle {
 	  font-family: Gill Sans, Verdana;
 	font-size: 11px;
 	line-height: 14px;

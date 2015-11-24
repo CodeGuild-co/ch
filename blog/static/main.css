@@ -11,6 +11,10 @@
     color: #d9ccee;
     max-width: 75%;
     margin: 1em auto 2em; }*/
+    
+   .navbar {
+   	background: green;}
+   }
   .navbar + .jumbotron {
     margin-top: -20px; }
   .jumbotron .lang-logo {

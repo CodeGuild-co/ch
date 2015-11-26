@@ -18,6 +18,7 @@ def writepost():
 
 @app.route('/savepost', methods=['POST'])
 def savepost():
+	form = cgi.FieldStorage()
 	title = request.form["title"]
 	content = request.form["content"]
 	b = models.BlogPost()

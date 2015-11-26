@@ -2,7 +2,7 @@
 {% block content %}
 <div class="container">
     <h3>"Hello World" - First Blog Post</h3>
-<hr>
+<br>
     <p class="btext">I’m here for several reasons. One of the main reasons is i have a passion for computer science and love anything computer related. In addition it’s great to have this to show my passion for university applications. Furthermore i hope to further myself in my knowledge of programming as well as the theory side for computer science too. Also i’m very fond of seeing Bletchley Park as my Great Great Uncle worked there cracking codes in World War 2.What i want to get out of this is meeting people who are just as passionate as me in the realm of Computer Science. Following this point, i also hope to gain experiences that i would be able to use in the professional world of Computer Science. This will also be great for my Personal statement as i’ll have a lot more to talk about.
 </p>
     <p class="btext">It will be great to work in a team and learn from others and not just a teacher or the web. I think this will increase my communication skills as well as presentation skills and not just my ability as a software engineer.</p>

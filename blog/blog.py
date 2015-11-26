@@ -10,14 +10,7 @@ models.init_app(app)
 def home():
 	posts = models.BlogPost.query.all()
 	return render_template('home.html', posts=posts)
-def getallposts():
-    data = ''
-    fn = 'blog/posts.json'
-    if getenv('DYNO') != None:
-        fn = '/app/blog/posts.json'
-    with open(fn, 'r') as f:
-        data = f.read()
-    return json.loads(data)
+
 
 @app.route('/writepost')
 def writepost():

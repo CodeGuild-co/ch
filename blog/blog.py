@@ -1,14 +1,16 @@
+import os
+
 from flask import Flask, render_template, redirect, url_for, request
-import models
-import json
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+db = SQLAlchemy(app)
 
-models.init_app(app)
 
 @app.route('/')
 def home():
-	posts = models.BlogPost.query.all()
+	posts = BlogPost.query.all()
 	return render_template('home.html', posts=posts)
 
 
@@ -21,18 +23,24 @@ def writepost():
 def savepost():
 	title = request.form["title"]
 	content = request.form["content"]
-	b = models.BlogPost()
+	b = BlogPost()
 	b.title = title
 	b.content = content
-	models.db.session.add(b)
-	models.db.session.commit()
+	db.session.add(b)
+	db.session.commit()
 	return redirect(url_for('posts', id=b.id))
 
 
 @app.route('/posts/<int:id>/')
 def posts(id):
-    post = models.BlogPost.query.get(id)
+    post = BlogPost.query.get(id)
     return render_template('post.html', title=post.title, content=post.content)
+
+
+class BlogPost(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.Text)
+    content = db.Column(db.Text)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')

@@ -1,9 +1,0 @@
-{% extends "masterfile.html" %}
-{% block content %}
-<div class="container">
-    <h3>Features i want to add to my blog.</h3><hr>
-    <p class="btext"></p>
-    <p class="btext"></p>
-    <p class="btext"></p>
-</div>
-{% endblock %}
